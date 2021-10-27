@@ -1,7 +1,10 @@
-package com.hp.jdbc.jdbcdemo.entity;
+package com.hp.jdbc.jdbcdemo.models;
+
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
+@Document(collection = "empdetails")
 public class Employee {
     private int id;
     private String name;
